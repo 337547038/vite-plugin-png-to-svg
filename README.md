@@ -37,9 +37,9 @@ export default defineConfig({
 
 ## 使用方法
 
-1.将需要转换的png图片保存至`pngPath`配置目录下，如`/src/assets/png`。在`dev`或`build`模式下会自动将目录下的png转换为svg并保存在指定位置。最后在页面中引用即可。
+方法1.将需要转换的png图片保存至`pngPath`配置目录下，如`/src/assets/png`。在`dev`或`build`模式下会自动将目录下的png转换为svg并保存在指定位置。最后在页面中引用即可。
 
-2.设置`isReplace`为`true`，同时将需转换的`img`添加`data-src="svg"`标识，即可自动将指定后缀文件内容中的png图片替换为svg内容。
+方法2.设置`isReplace`为`true`，同时将需转换的`img`添加`data-src="svg"`标识，即可自动将指定后缀文件内容中的png图片替换为svg内容。
 
 ```html
 <div>
