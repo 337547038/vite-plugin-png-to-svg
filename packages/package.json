@@ -1,0 +1,53 @@
+{
+  "name": "vite-plugin-png-to-svg",
+  "version": "0.2.0",
+  "description": "一款基于NodeJs的Png图片转换Svg格式的Vite插件，可将Png小图标转换为Svg，从而更好的适应页面的需求，可有效减少服务器接收和发送请求，提高页面加载速度。支持Vue、React等所有框架",
+  "license": "MIT",
+  "author": "337547038",
+  "keywords": [
+    "png",
+    "svg",
+    "png转换svg",
+    "vue3",
+    "react",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/337547038/vite-plugin-png-to-svg.git",
+    "directory": "packages"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/337547038/vite-plugin-png-to-svg/issues"
+  },
+  "homepage": "https://github.com/337547038/vite-plugin-png-to-svg",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "tsup": "tsup"
+  },
+  "dependencies": {
+    "potrace": "^2.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.0.2"
+  }
+}
